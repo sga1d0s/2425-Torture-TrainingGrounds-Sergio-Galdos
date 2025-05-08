@@ -5,7 +5,11 @@ import Day from "./Day.mjs";
 
 createCharacters()
 
-// crear characters
+createDay()
+
+
+
+// create Characters
 function createCharacters() {
   let characters = []
   for (let i = 0; i < data.length; i++) {
@@ -14,3 +18,9 @@ function createCharacters() {
     characters.push(char)
   }
 }
+
+// create Day object
+function createDay() {
+  const day = new Day(3, "Tuesday")
+}
+
