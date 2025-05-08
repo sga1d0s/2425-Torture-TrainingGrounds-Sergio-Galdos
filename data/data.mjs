@@ -1,4 +1,4 @@
-[
+export default [
   {
     "name": "Garruk Ironhide",
     "occupation": "peasant",
