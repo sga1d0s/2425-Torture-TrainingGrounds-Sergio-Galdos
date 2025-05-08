@@ -1,4 +1,3 @@
-import Weapon from "./Weapon.mjs"
 
 export default class Character {
   constructor(name, occupation, gold, level, skills, weapon) {
@@ -29,15 +28,22 @@ export default class Character {
       points = 30
     }
 
-    const weapon = new Weapon(
-      this.weapon.weaponName,
-      this.weapon.type,
-      this.weapon.pointsForNextSkill, points)
-
-      
-
     // actualizar datos de personaje
+
+
+
+
     // actualizar datos de arma
+    for (let i = 0; i < this.weapon.length; i++) {
+      const element = this.weapon[i];
+      if (element.name === weaponName) {
+        this.weapon.points += points
+        if (this.weapon.points >= this.weapon.pointsForNextSkill){
+          
+        }
+      }
+
+    }
 
   }
 }
